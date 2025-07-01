@@ -1,0 +1,185 @@
+/* Base styles for forms */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500&family=Special+Gothic+Expanded+One&display=swap');
+
+.special-gothic-expanded-one-regular {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Register, #forgot,
+.Login{
+  width: 400px;
+  font-family: 'Poppins', sans-serif; /* Poppins font for all forms */
+  padding: 30px;
+  border: 2px solid #4f2c6e; /* Subtle violet border */
+  border-radius: 8px;
+ 
+  margin: 20px auto;
+ 
+  background-color: #060658; /* Darker background */
+  box-shadow: 0 0 15px rgba(108, 91, 123, 0.5); /* Glowing violet shadow */
+  color: #f0edee; /* Light text */
+}
+
+.cgpa-calculator{
+  width: 600px;
+  font-family: 'Poppins', sans-serif; /* Poppins font for all forms */
+  padding: 30px;
+  border: 2px solid #4f2c6e; /* Subtle violet border */
+  border-radius: 8px;
+ 
+  margin: 20px auto;
+ 
+  background-color: #060658; /* Darker background */
+  box-shadow: 0 0 15px rgba(108, 91, 123, 0.5); /* Glowing violet shadow */
+  color: #f0edee; /* Light text */
+}
+
+.card{
+ /* width: 400px; /* Consider making this dynamic or responsive */
+ font-family: 'Poppins', sans-serif; /* Modern, clean font */
+
+ padding: 30px;
+ border: 1px solid #e0e0e0; /* Light grey, subtle border */
+ border-radius: 8px;
+
+ margin: 20px auto;
+
+ background-color: #f9f9f9; /* Very light grey, almost white */
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft, modern shadow */
+ color: #333; /* Dark grey, readable text */
+}
+
+
+#myForm,#facultysearch {
+  width: 1000px;
+  font-family: 'Poppins', sans-serif; /* Poppins font for all forms */
+  padding: 20px;
+  border: 2px solid #000000; /* Subtle violet border */
+  border-radius: 8px;
+  background-color: #060658; /* Darker background */
+  /*box-shadow: 0 0 15px rgba(108, 91, 123, 0.5);  Glowing violet shadow */
+  color: #f0edee; /* Light text */
+  margin: 5px auto; /* Example: Adds top and bottom margin, centers horizontally */
+}
+
+/* Specific adjustments for Register form */
+.Register {
+  width: 300px;
+}
+
+/* Specific adjustments for Login form */
+.Login {
+  width: 500px;
+}
+
+/* Specific adjustments for myForm */
+#myForm {
+  width: 600px;
+}
+
+/* Style for the routine display */
+.routine-display {
+   width: 90%; /* Adjust as needed */
+  margin: 20px auto; /* To center it horizontally within its parent */
+  font-family: 'Poppins', sans-serif;
+  /* height: 500px; /* You might want to remove or adjust fixed height */ 
+  padding: 10px;
+  border: 1px solid #6c5b7b;
+  border-radius: 8px;
+  background-color: #191941;
+  box-shadow: 0 0 15px rgba(108, 91, 123, 0.5);
+  color: #f0edee;
+}
+
+/* Container (Button-like) Styles */
+.container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: auto;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #a78cc6; /* Brighter violet border */
+  background-color: #1f1d42; /* Darker button background */
+  color: #f0edee;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.container:hover {
+  background-color: #a78cc6; /* Brighter violet background on hover */
+  border-color: #cbb9e6;
+  color: #1e1e24; /* Darker text on hover */
+}
+
+/* Add more specific styles as needed */
+
+/* Add a neon effect to text */
+h1, h2, h3, h4, h5, h6, label, button {
+  text-shadow: 0 0 5px #a78cc6; /* Neon glow to text */
+}
+
+/* Optional: Add a subtle animation */
+@keyframes glow {
+  0% { box-shadow: 0 0 5px rgba(173, 13, 13, 0.2); }
+  50% { box-shadow: 0 0 15px rgba(160, 48, 48, 0.5); }
+  100% { box-shadow: 0 0 5px rgba(247, 3, 3, 0); }
+}
+
+.Register,
+.Login,
+#myForm,
+.card,
+.routine-display {
+  animation: glow 3s infinite alternate; /* Apply the glow animation */
+}
+
+
+
+.routine-table-container {
+  width: 80%; /* Or your desired width */
+  margin: 20px auto;
+  border: 1px solid #ccc; /* Optional border for visual separation */
+}
+
+.routine-table {
+  width: 100%;
+  
+  border-collapse: collapse;
+}
+
+.routine-table thead th {
+  background-color: #f0f0f0; /* Optional header background */
+  position: sticky;
+  top: 0;
+  z-index: 1; /* Ensure header stays on top of scrolling content */
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+}
+
+.routine-table tbody {
+  display: block;
+  max-height: 100px; /* Adjust this value based on your desired max height */
+  overflow-y: auto;
+}
+
+.routine-table tbody tr {
+  display: table-row; /* Ensure rows behave like table rows within the scrolling body */
+  width: 100%; /* Make rows take full width of the container */
+}
+
+.routine-table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+

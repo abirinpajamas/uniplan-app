@@ -1,0 +1,34 @@
+# Node.js (for frontend frameworks like React, Vue, Angular)
+node_modules/
+.env             # CRITICAL: This is where your MySQL credentials (and other secrets) should be! Keep it here.
+build/
+dist/
+.next/ # For Next.js
+
+
+# Composer dependencies
+vendor/
+
+# Python (for backend frameworks like Django, Flask)
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+*.log
+*.sqlite3        # You can remove this line if you are ONLY using MySQL and no SQLite.
+                 # It won't hurt anything to leave it, but it's not relevant for MySQL.
+media/ # If you store uploaded user media files locally (good to keep if you do)
+
+# IDEs
+.vscode/ # VS Code specific settings (optional, but often ignored - good to keep if you want)
+.idea/   # IntelliJ/PyCharm specific settings
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# General backup/temp files
+*.bak
+*.tmp
+*~
